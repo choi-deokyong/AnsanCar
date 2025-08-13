@@ -27,44 +27,18 @@
             </div>
 
             <div class="form-group">
-                <label>3. 출발 날짜와 시간</label>
-                <div class="datetime-group">
-                    <input type="date" id="departureDate" required>
-                    <select id="departureHour" required>
-                        </select>
-                    <select id="departureMinute" required>
-                        <option value="00">00분</option>
-                        <option value="10">10분</option>
-                        <option value="20">20분</option>
-                        <option value="30">30분</option>
-                        <option value="40">40분</option>
-                        <option value="50">50분</option>
-                    </select>
-                </div>
-                <input type="hidden" id="departureDateTime" name="departureDateTime">
+                <label for="departureDateTime">3. 출발 날짜와 시간</label>
+                <input type="datetime-local" id="departureDateTime" name="departureDateTime" required>
             </div>
 
             <div class="form-group">
-                <label>4. 도착 날짜와 시간</label>
-                <div class="datetime-group">
-                    <input type="date" id="arrivalDate" required>
-                    <select id="arrivalHour" required>
-                        </select>
-                    <select id="arrivalMinute" required>
-                        <option value="00">00분</option>
-                        <option value="10">10분</option>
-                        <option value="20">20분</option>
-                        <option value="30">30분</option>
-                        <option value="40">40분</option>
-                        <option value="50">50분</option>
-                    </select>
-                </div>
-                <input type="hidden" id="arrivalDateTime" name="arrivalDateTime">
+                <label for="arrivalDateTime">4. 도착 날짜와 시간</label>
+                <input type="datetime-local" id="arrivalDateTime" name="arrivalDateTime" required>
             </div>
 
             <div class="form-group">
-    <label for="numberOfPeople">5. 몇 명이 가시나요?</label>
-    <input type="text" id="numberOfPeople" name="numberOfPeople" required>
+                <label for="numberOfPeople">5. 몇 명이 가시나요?</label>
+                <input type="number" id="numberOfPeople" name="numberOfPeople" min="1" required>
             </div>
 
             <div class="form-group">
@@ -142,5 +116,3 @@
 </body>
 
 </html>
-
-
